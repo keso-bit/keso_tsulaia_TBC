@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="200" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c1810"/>
+      <stop offset="100%" stop-color="#1a0f0a"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle decorative circles -->
+  <circle cx="90" cy="90" r="15" fill="#ffffff" opacity="0.2"/>
+  <circle cx="310" cy="110" r="25" fill="#ffffff" opacity="0.15"/>
+  <circle cx="320" cy="280" r="18" fill="#ffffff" opacity="0.2"/>
+  
+  <!-- Body / Shoulders -->
+  <path d="M110 370 C110 300, 150 270, 200 270 C250 270, 290 300, 290 370 Z" fill="#ffffff" opacity="0.95"/>
+  <path d="M165 270 L200 310 L235 270 Z" fill="#e0e7ff"/>
+  
+  <!-- Neck -->
+  <rect x="182" y="220" width="36" height="60" rx="10" fill="#fbd38d"/>
+  
+  <!-- Long Hair Back -->
+  <path d="M125 180 C120 260, 140 310, 150 330 C155 310, 160 250, 160 200 Z" fill="url(#hairGrad)"/>
+  <path d="M275 180 C280 260, 260 310, 250 330 C245 310, 240 250, 240 200 Z" fill="url(#hairGrad)"/>
+  
+  <!-- Head / Face -->
+  <ellipse cx="200" cy="180" rx="55" ry="65" fill="#fbd38d"/>
+  
+  <!-- Hair Front / Style -->
+  <path d="M145 175 C140 120, 170 100, 200 100 C230 100, 260 120, 255 175 C245 140, 225 130, 200 135 C170 130, 155 145, 145 175 Z" fill="url(#hairGrad)"/>
+  <path d="M145 160 C155 175, 165 190, 168 215 C162 210, 150 190, 145 160 Z" fill="url(#hairGrad)"/>
+  <path d="M255 160 C245 175, 235 190, 232 215 C238 210, 250 190, 255 160 Z" fill="url(#hairGrad)"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="180" cy="175" rx="5" ry="6" fill="#2d3748"/>
+  <ellipse cx="220" cy="175" rx="5" ry="6" fill="#2d3748"/>
+  <circle cx="182" cy="173" r="2" fill="#ffffff"/>
+  <circle cx="222" cy="173" r="2" fill="#ffffff"/>
+  
+  <!-- Eyebrows -->
+  <path d="M172 163 Q180 159 188 163" stroke="#2c1810" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M212 163 Q220 159 228 163" stroke="#2c1810" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Glasses (Stylish modern frames) -->
+  <rect x="165" y="165" width="30" height="20" rx="6" fill="none" stroke="#4a5568" stroke-width="3"/>
+  <rect x="205" y="165" width="30" height="20" rx="6" fill="none" stroke="#4a5568" stroke-width="3"/>
+  <path d="M195 173 L205 173" stroke="#4a5568" stroke-width="3"/>
+  
+  <!-- Smile -->
+  <path d="M188 208 Q200 220 212 208" stroke="#c53030" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Cheeks -->
+  <ellipse cx="170" cy="195" rx="7" ry="4" fill="#feb2b2" opacity="0.6"/>
+  <ellipse cx="230" cy="195" rx="7" ry="4" fill="#feb2b2" opacity="0.6"/>
+</svg>
