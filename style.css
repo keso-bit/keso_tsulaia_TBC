@@ -1,0 +1,201 @@
+/* ==========================================================================
+   კესო წულაიას პორტფოლიო - Main Stylesheet (style.css)
+   ========================================================================== */
+
+/* 1. Global & Typography Styles */
+body {
+    font-family: 'Noto Sans Georgian', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+mark {
+    background: linear-gradient(120deg, rgba(165, 180, 252, 0.3) 0%, rgba(196, 181, 253, 0.45) 100%);
+    color: #3730a3;
+    padding: 0.15rem 0.5rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+}
+
+code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    background-color: #f1f5f9;
+    color: #4f46e5;
+    padding: 0.15rem 0.35rem;
+    border-radius: 0.375rem;
+    font-size: 0.85em;
+}
+
+/* 2. Custom Progress Bars (Skills Page) */
+progress {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 9999px;
+    height: 0.625rem;
+    width: 100%;
+    overflow: hidden;
+    background-color: #e2e8f0;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e2e8f0;
+    border-radius: 9999px;
+}
+
+progress::-webkit-progress-value {
+    background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+    border-radius: 9999px;
+    transition: width 0.5s ease-in-out;
+}
+
+progress::-moz-progress-bar {
+    background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+    border-radius: 9999px;
+}
+
+/* 3. Custom Meter (Skills Page) */
+meter {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 9999px;
+    height: 0.75rem;
+    width: 130px;
+    background-color: #e2e8f0;
+}
+
+meter::-webkit-meter-bar {
+    background: #e2e8f0;
+    border-radius: 9999px;
+    border: none;
+}
+
+meter::-webkit-meter-optimum-value {
+    background: linear-gradient(90deg, #10b981 0%, #06b6d4 100%);
+    border-radius: 9999px;
+}
+
+/* 4. Pure CSS Burger Menu (Checkbox Hack) */
+#mobile-menu-toggle:checked ~ .brand-bar .burger-btn .burger-icon {
+    display: none !important;
+}
+
+#mobile-menu-toggle:checked ~ .brand-bar .burger-btn .close-icon {
+    display: block !important;
+}
+
+#mobile-menu-toggle:checked ~ .brand-bar .burger-btn {
+    background-color: #eef2ff !important;
+    color: #4f46e5 !important;
+    border-color: #c7d2fe !important;
+}
+
+/* 5. 1010px Breakpoint: Burger Menu active at <= 1010px, Desktop at >= 1011px */
+@media (max-width: 1010px) {
+    .header-inner {
+        flex-wrap: wrap !important;
+    }
+
+    .brand-bar {
+        width: 100% !important;
+    }
+
+    .burger-btn {
+        display: flex !important;
+    }
+
+    .main-nav {
+        display: none !important;
+        width: 100% !important;
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.25rem !important;
+        border-top: 1px solid rgba(226, 232, 240, 0.8) !important;
+        margin-top: 0.75rem !important;
+    }
+
+    #mobile-menu-toggle:checked ~ .main-nav {
+        display: block !important;
+        animation: mobileMenuFadeIn 0.2s ease-out forwards;
+    }
+
+    .main-nav ul {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 0.375rem !important;
+    }
+
+    .main-nav li {
+        width: 100% !important;
+    }
+
+    .main-nav a {
+        display: block !important;
+        width: 100% !important;
+        padding-top: 0.625rem !important;
+        padding-bottom: 0.625rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .main-nav strong {
+        display: block !important;
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 1011px) {
+    .header-inner {
+        flex-wrap: nowrap !important;
+    }
+
+    .brand-bar {
+        width: auto !important;
+    }
+
+    .burger-btn {
+        display: none !important;
+    }
+
+    .main-nav {
+        display: block !important;
+        width: auto !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        border-top: none !important;
+        margin-top: 0 !important;
+    }
+
+    .main-nav ul {
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 0.5rem !important;
+    }
+
+    .main-nav li {
+        width: auto !important;
+    }
+
+    .main-nav a {
+        display: inline-flex !important;
+        width: auto !important;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    .main-nav strong {
+        display: inline-flex !important;
+        width: auto !important;
+    }
+}
+
+/* 6. Mobile Menu Animation */
+@keyframes mobileMenuFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
